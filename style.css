@@ -31,3 +31,48 @@ body {
     justify-content: center;
     font-family: monospace !important;
 }
+.modal-content{
+    color: black;
+    padding: 10px;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+.droupdown{
+    margin: 5px;
+}
+.modal-start{
+    width: 50%;
+}
+.alrm-name{
+    margin-bottom: 20px;
+}
+.alarm-modal{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-color{
+    background-color: rgb(65, 209, 214);
+    
+}
+.btn-color:hover{
+    background-color: rgb(65, 209, 214);
+    opacity: 0.8;
+}
+.set-alarm-btn{
+    background-color: rgb(65, 209, 214);
+    color: aliceblue;
+    font-size: 30px;
+}
+.set-alarm-btn:hover{
+    background-color: rgb(65, 209, 214);
+    color:aliceblue;
+
+
+}

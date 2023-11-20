@@ -26,8 +26,8 @@
         </div>
         <div class="alarm-modal">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Launch static backdrop modal
+            <button type="button" class="btn set-alarm-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                SET AN ALARM
             </button>
 
             <!-- Modal -->
@@ -35,9 +35,35 @@
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <p>ahmed</p>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <div class="time">
+                            <div class="col-md-5 droupdown">
+                                <label for="inputState" class="form-label">State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-5 droupdown">
+                                <label for="inputState" class="form-label">State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="alrm-name">
+                            <div class="col-md-12">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-color" data-bs-dismiss="modal">Set</button>
+
+                        </div>
+                        <!-- <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">close</button> -->
                         <!-- <div class="modal-header">
                             <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
                         </div>
