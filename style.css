@@ -68,7 +68,9 @@ body {
 .set-alarm-btn{
     background-color: rgb(65, 209, 214);
     color: aliceblue;
-    font-size: 30px;
+
+  
+
 }
 .set-alarm-btn:hover{
     background-color: rgb(65, 209, 214);
