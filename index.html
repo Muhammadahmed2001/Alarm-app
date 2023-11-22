@@ -38,7 +38,8 @@
                         <div class="time">
                             <div class="col-md-5 droupdown">
                                 <label for="inputState" class="form-label">Hours</label>
-                                <select id="inputState" class="form-select">
+                                <input type="time" class="form-control" id="input-time">
+                                <!-- <select id="hours" class="form-select">
 
                                     <option value="01">1 AM</option>
                                     <option value="02">2 AM</option>
@@ -64,11 +65,12 @@
                                     <option value="21">9 PM</option>
                                     <option value="22">10 PM</option>
                                     <option value="23">11 PM</option>
-                                </select>
+                                </select> -->
                             </div>
                             <div class="col-md-5 droupdown">
                                 <label for="inputState" class="form-label">Minutes</label>
-                                <select id="inputState" class="form-select">
+                                <input type="date" class="form-control" id="date-input">
+                                <!-- <select id="minutes" class="form-select">
                                     <option selected value="00">00</option>
                                     <option value="01">01</option>
                                     <option value="02">02</option>
@@ -129,32 +131,40 @@
                                     <option value="57">57</option>
                                     <option value="58">58</option>
                                     <option value="59">59</option>
-                                </select>
+                                </select> -->
                             </div>
                         </div>
                         <div class="alrm-name">
                             <div class="col-md-12">
                                 <label for="recipient-name" class="col-form-label">Alarm Name</label>
-                                <input placeholder="Set Your Alarm Name..." type="text" class="form-control" id="recipient-name">
+                                <input placeholder="Set Your Alarm Name..." type="text" class="form-control" id="alarm-name">
                             </div>
                         </div>
                         <div class="button">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-color" data-bs-dismiss="modal">Set</button>
+                            <button onclick="getTime()" type="button" class="btn btn-color" data-bs-dismiss="modal">Set</button>
                         </div>
-                        <!-- <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">close</button> -->
-                        <!-- <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            
-                        </div> -->
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="time-box">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">NO</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Alamr</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr> -->
+                </tbody>
+              </table>
         </div>
 
     </div>
