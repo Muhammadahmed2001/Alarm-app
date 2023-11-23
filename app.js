@@ -19,10 +19,10 @@ var timeList = document.getElementById("time-list");
 var listNo = 0;
 
 var getTime = () => {
-  listNo++;
-  amPm = moment(inputTime.value, "hh:mm").format("hh:mm:ss a");
-  if(alarmName.value && inputTime.value  !== ""){
-      timeList.innerHTML += `
+    amPm = moment(inputTime.value, "hh:mm").format("hh:mm:ss a");
+    if(alarmName.value && inputTime.value  !== ""){
+        listNo++;
+        timeList.innerHTML += `
         <tr>
         <th scope="row">${listNo}</th>
         <td>${alarmName.value}</td>
