@@ -1,3 +1,31 @@
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => {
+        console.log("service worker registered")
+        Notification.requestPermission().then(res=>{
+          if(Notification.permission=='granted'){
+              console.log("Granted permission")
+              return
+          }
+          console.log(res)
+      })
+    })
+      .catch(err => console.log("service worker not registered", err))
+  })
+  navigator.serviceWorker.ready.then((swReg)=>{
+    var option = {
+      message : "This is Message Body"
+    };
+    swReg.showNotification("This is Message title", option)
+  })
+}
+
+
+
+
+
 var date = document.getElementById("date");
 var time = document.getElementById("time");
 date.innerHTML = moment().format("Do MMMM YYYY");
@@ -9,7 +37,7 @@ var notification = false;
 setInterval(() => {
   time.innerHTML = moment().format("h:mm:ss a");
   //   htmlTime = moment(time.innerHTML, "h:mm:ss a").format("hh:mm:ss a");
-  console.log(time.innerHTML.slice(0, 8) === amPm.slice(0, 8));
+  // console.log(time.innerHTML.slice(0, 8) === amPm.slice(0, 8));
 }, 1000);
 
 var inputTime = document.getElementById("input-time");

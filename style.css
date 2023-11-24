@@ -22,6 +22,8 @@ body {
 }
 
 .clock {
+  
+  
   color: rgb(65, 209, 214);
   display: flex;
   flex-direction: column;
