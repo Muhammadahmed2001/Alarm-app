@@ -8,10 +8,11 @@ body {
 }
 @media only screen and (max-width: 1210px) {
   body {
-    background-image: linear-gradient(60deg, #1c2024 0%, #292e33 100%);
+    background-color: rgb(12, 20, 19) !important;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100% !important;
+    background: none;
   }
 }
 
@@ -41,7 +42,7 @@ body {
   justify-content: center;
   font-family: monospace !important;
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 430px) {
    #time{
     font-size: 25px;
    }
